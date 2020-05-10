@@ -325,17 +325,46 @@ template {
   text-transform: uppercase; }
   .button:hover {
     cursor: pointer; }
+  .button:focus {
+    outline: none; }
   .button--primary {
     background-color: #E3B873;
     color: #ffffff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.3s; }
+    .button--primary::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #ffffff;
+      transition: 0.3s;
+      width: 0%; }
     .button--primary:hover {
       box-shadow: none; }
+      .button--primary:hover::after {
+        width: 100%; }
+    .button--primary:active {
+      background-color: rgba(19, 19, 19, 0.8);
+      padding: 12px 19px;
+      border: 1px solid #ffffff; }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
-    color: #ffffff; }
+    color: #ffffff;
+    transition: background-color 0.2s; }
+    .button--outline::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #ffffff;
+      transition: 0.3s;
+      width: 0%; }
+    .button--outline:hover {
+      background-color: #E3B873; }
+      .button--outline:hover::after {
+        width: 100%; }
+    .button--outline:active {
+      background-color: rgba(19, 19, 19, 0.8); }
 
 .container {
   width: 85%;
@@ -383,16 +412,33 @@ body {
   text-transform: uppercase; }
 
 .nav__item {
+  display: inline-block;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 40px;
   transition: color 0.2s; }
+  .nav__item::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #E3B873;
+    transition: 0.3s;
+    width: 0%; }
   .nav__item:hover {
     color: #E3B873; }
+    .nav__item:hover::after {
+      width: 100%; }
+  .nav__item:active {
+    color: #ffffff; }
+    .nav__item:active::after {
+      background-color: #ffffff; }
 
 .phone {
-  color: #E3B873; }
+  color: #E3B873;
+  transition: color 0.2s; }
+  .phone:hover {
+    color: #ffffff; }
 
 .contacts__phone {
   margin-right: 45px; }
@@ -449,6 +495,10 @@ body {
       border: 2px solid #E3B873;
       border-radius: 50%;
       margin-left: 12px; }
+    .hero__scroll-down:hover {
+      border: 2px solid #E3B873; }
+    .hero__scroll-down:active {
+      border: 2px solid #ffffff; }
 
 .instagram {
   display: flex;
@@ -470,6 +520,12 @@ body {
       height: 1px;
       background-color: #E3B873;
       margin-left: 8px; }
+    .instagram__link:hover {
+      padding: 7px;
+      border: 1px solid #E3B873; }
+    .instagram__link:active {
+      background-color: #E3B873;
+      color: #ffffff; }
 
 .title {
   margin: 0;
