@@ -6,6 +6,8 @@
   align-items: flex-start
   padding-top: 100px
   background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
+  background-position: 50px 83px
+  background-size: 98% 85%
   height: 100vh
   color: $light
   &::before
@@ -20,18 +22,26 @@
     position: relative
     max-width: 47.85rem
     margin-left: 4.28rem
+    padding-bottom: 5.71rem
+  &__title
+    margin-bottom: 1rem
   &__text
     margin: 0
+    margin-bottom: 3.4rem
     font-size: 1.57rem
+    line-height: 131%
     max-width: 504px
   &__button
-    margin-right: 17px
-    padding: 19px 29px
+    margin-right: 16px
+    padding: 18px 28px
+    &:active
+      background-color: rgba($dark, 0.8)
+      padding: 18px 28px
   &__instagram
     position: absolute
     left: 0
     top: 0
-    max-width: 80px
+    max-width: 90px
   &__scroll-down
     position: absolute
     display: flex
@@ -39,6 +49,8 @@
     align-items: center
     left: 0
     bottom: 0
+    font-family: Yeseva One
+    font-size: 0.85rem
     min-width: 17.6rem
     min-height: 6.92rem
     background-color: $dark
@@ -52,11 +64,18 @@
       height: 30px
       border: 2px solid $primary
       border-radius: 50%
-      margin-left: 12px
+      margin-left: 15px
     &:hover
       border: 2px solid $primary
     &:active
       border: 2px solid $light
+.button
+  &--outline
+    padding: 17px 45px
+    &:active
+      background-color: rgba($dark, 0.8)
+      padding: 18px 45px
+
 .instagram 
   display: flex
   justify-content: center
@@ -85,7 +104,7 @@
       background-color: $primary
       color: $light
 .title
-  margin: 0
+  margin-top: 0
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
   font-size: 2.857rem

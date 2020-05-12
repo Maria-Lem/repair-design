@@ -364,11 +364,9 @@ template {
       background-color: #E3B873; }
       .button--outline:hover::after {
         width: 100%; }
-    .button--outline:active {
-      background-color: rgba(19, 19, 19, 0.8); }
 
 .container {
-  width: 85%;
+  width: 96%;
   max-width: 1256px;
   margin: auto; }
 
@@ -421,7 +419,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.5rem;
+  margin-right: 2.60rem;
   transition: color 0.2s; }
   .nav__item::after {
     content: '';
@@ -456,6 +454,8 @@ body {
   align-items: flex-start;
   padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  background-position: 50px 83px;
+  background-size: 98% 85%;
   height: 100vh;
   color: #ffffff; }
   .hero::before {
@@ -469,19 +469,27 @@ body {
   .hero__content {
     position: relative;
     max-width: 47.85rem;
-    margin-left: 4.28rem; }
+    margin-left: 4.28rem;
+    padding-bottom: 5.71rem; }
+  .hero__title {
+    margin-bottom: 1rem; }
   .hero__text {
     margin: 0;
+    margin-bottom: 3.4rem;
     font-size: 1.57rem;
+    line-height: 131%;
     max-width: 504px; }
   .hero__button {
-    margin-right: 17px;
-    padding: 19px 29px; }
+    margin-right: 16px;
+    padding: 18px 28px; }
+    .hero__button:active {
+      background-color: rgba(19, 19, 19, 0.8);
+      padding: 18px 28px; }
   .hero__instagram {
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 80px; }
+    max-width: 90px; }
   .hero__scroll-down {
     position: absolute;
     display: flex;
@@ -489,6 +497,8 @@ body {
     align-items: center;
     left: 0;
     bottom: 0;
+    font-family: Yeseva One;
+    font-size: 0.85rem;
     min-width: 17.6rem;
     min-height: 6.92rem;
     background-color: #131313;
@@ -502,11 +512,17 @@ body {
       height: 30px;
       border: 2px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 15px; }
     .hero__scroll-down:hover {
       border: 2px solid #E3B873; }
     .hero__scroll-down:active {
       border: 2px solid #ffffff; }
+
+.button--outline {
+  padding: 17px 45px; }
+  .button--outline:active {
+    background-color: rgba(19, 19, 19, 0.8);
+    padding: 18px 45px; }
 
 .instagram {
   display: flex;
@@ -537,7 +553,7 @@ body {
       color: #ffffff; }
 
 .title {
-  margin: 0;
+  margin-top: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
