@@ -4,44 +4,14 @@
   border-radius: 2px
   text-transform: uppercase
   font-size: 0.93rem
-  &:hover
-    cursor: pointer
   &:focus
     outline: none
   &--primary
     background-color: $primary
     color: $light
     box-shadow: 0px 5px 15px rgba($primary, 0.2)
-    transition: box-shadow 0.3s
-    &::after
-      content: ''
-      display: block
-      height: 1px
-      background-color: $light
-      transition: 0.3s
-      width: 0%
-    &:hover
-      box-shadow: none
-      &::after
-        width: 100%
-    &:active
-      background-color: rgba($dark, 0.8)
-      padding: 10px 23px
-      border: 1px solid $light
   &--outline
     border: 1px solid $light
     background-color: transparent
     color: $light
-    transition: background-color 0.2s
-    &::after
-      content: ''
-      display: block
-      height: 1px
-      background-color: $light
-      transition: 0.3s
-      width: 0%
-    &:hover
-      background-color: $primary
-      &::after
-        width: 100%
       

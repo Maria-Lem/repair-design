@@ -6,8 +6,6 @@
   align-items: flex-start
   padding-top: 100px
   background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
-  background-position: 50px 83px
-  background-size: 98% 85%
   height: 100vh
   color: $light
   &::before
@@ -22,7 +20,9 @@
     position: relative
     max-width: 47.85rem
     margin-left: 4.28rem
-    padding-bottom: 5.71rem
+    padding-bottom: 5.75rem
+  &__container
+    width: 90%
   &__title
     margin-bottom: 1rem
   &__text
@@ -30,13 +30,10 @@
     margin-bottom: 3.4rem
     font-size: 1.57rem
     line-height: 131%
-    max-width: 504px
+    max-width: 36rem
   &__button
     margin-right: 16px
     padding: 18px 28px
-    &:active
-      background-color: rgba($dark, 0.8)
-      padding: 18px 28px
   &__instagram
     position: absolute
     left: 0
@@ -65,17 +62,9 @@
       border: 2px solid $primary
       border-radius: 50%
       margin-left: 15px
-    &:hover
-      border: 2px solid $primary
-    &:active
-      border: 2px solid $light
 .button
   &--outline
     padding: 17px 45px
-    &:active
-      background-color: rgba($dark, 0.8)
-      padding: 18px 45px
-
 .instagram 
   display: flex
   justify-content: center

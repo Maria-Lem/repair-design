@@ -4,6 +4,10 @@
   .nav
     &__item
       margin-right: 1rem
+@media screen and ( min-width: 1200px )
+  .hero
+    background-size: 100% 84%
+    background-position: 50px 83px
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -11,7 +15,7 @@
     &__instagram
       display: none
     &__content
-      margin-left: 0
+      margin-left: 2.85rem
 @media screen and ( max-width: 570px )
   .contacts
     &__phone
@@ -27,6 +31,7 @@
       display: none
     &__content
       max-width: 22.86rem
+      margin-left: 0
     &__text
       font-size: 1.29rem
       margin-bottom: 2.28rem
@@ -38,3 +43,56 @@
   .hero
     &__scroll-down
       display: none
+//псевдоклассы и псевдоэлементы
+@media screen and ( min-width: 992px )
+  .phone
+    transition: color 0.2s
+    &:hover
+      color: $light
+  .button
+    &:hover
+      cursor: pointer
+    &--primary
+      transition: box-shadow 0.3s
+      &::after
+        content: ''
+        display: block
+        height: 1px
+        background-color: $light
+        transition: 0.3s
+        width: 0%
+      &:hover
+        box-shadow: none
+        &::after
+          width: 100%
+      &:active
+        background-color: rgba($dark, 0.8)
+        padding: 10px 23px
+        border: 1px solid $light
+    &--outline
+      transition: background-color 0.2s
+      &::after
+        content: ''
+        display: block
+        height: 1px
+        background-color: $light
+        transition: 0.3s
+        width: 0%
+      &:hover
+        background-color: $primary
+        &::after
+          width: 100%
+      &:active
+        padding: 17px 45px
+        background-color: rgba($dark, 0.8)
+  .hero
+    &__button
+      &--primary
+        &:active
+          background-color: rgba($dark, 0.8)
+          padding: 17px 27px
+    &__scroll-down
+      &:hover
+        border: 2px solid $primary
+      &:active
+        border: 2px solid $light
