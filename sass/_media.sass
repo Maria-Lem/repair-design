@@ -4,6 +4,9 @@
   .nav
     &__item
       margin-right: 1rem
+  .hero
+    &__title
+      max-width: 33rem
 @media screen and ( min-width: 1200px )
   .hero
     background-size: 100% 84%
@@ -16,7 +19,7 @@
       display: none
     &__content
       margin-left: 2.85rem
-@media screen and ( max-width: 570px )
+@media screen and ( max-width: 578px )
   .header
     padding: 21px 0
     &__container
@@ -35,7 +38,7 @@
   .hero
     &__content
       padding-bottom: 0
-      margin-left: 0
+      margin: auto
     &__scroll-down
       display: none
     &__title
@@ -46,7 +49,6 @@
     &__text
       font-size: 1.5rem
       line-height: 2.05rem
-      max-width: 26.5rem
       margin-bottom: 2.8rem
     &__button
       display: block
@@ -56,11 +58,20 @@
       margin-bottom: 1.85rem
       &--primary
         margin-bottom: 2.4rem
-        max-width: 28.05rem
         width: 100%
       &--outline
-        max-width: 28.05rem
         width: 100%
+@media screen and ( max-width: 400px )
+  .hero
+    &__content
+      margin-left: 0
+    &__text
+      max-width: 26.5rem
+    &__button
+      &--primary
+        max-width: 28.05rem
+      &--outline
+        max-width: 28.05rem
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down

@@ -533,7 +533,9 @@ body {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .hero__title {
+    max-width: 33rem; } }
 
 @media screen and (min-width: 1200px) {
   .hero {
@@ -548,7 +550,7 @@ body {
   .hero__content {
     margin-left: 2.85rem; } }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 578px) {
   .header {
     padding: 21px 0; }
     .header__container {
@@ -565,7 +567,7 @@ body {
       letter-spacing: 0.7px; }
   .hero__content {
     padding-bottom: 0;
-    margin-left: 0; }
+    margin: auto; }
   .hero__scroll-down {
     display: none; }
   .hero__title {
@@ -576,7 +578,6 @@ body {
   .hero__text {
     font-size: 1.5rem;
     line-height: 2.05rem;
-    max-width: 26.5rem;
     margin-bottom: 2.8rem; }
   .hero__button {
     display: block;
@@ -586,11 +587,19 @@ body {
     margin-bottom: 1.85rem; }
     .hero__button--primary {
       margin-bottom: 2.4rem;
-      max-width: 28.05rem;
       width: 100%; }
     .hero__button--outline {
-      max-width: 28.05rem;
       width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .hero__content {
+    margin-left: 0; }
+  .hero__text {
+    max-width: 26.5rem; }
+  .hero__button--primary {
+    max-width: 28.05rem; }
+  .hero__button--outline {
+    max-width: 28.05rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
