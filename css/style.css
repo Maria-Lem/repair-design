@@ -379,7 +379,7 @@ body {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding: 24px 0; }
+  padding: 24px 0 22px 0; }
 
 .menu {
   display: flex;
@@ -445,15 +445,15 @@ body {
   .hero__content {
     position: relative;
     max-width: 47.85rem;
-    margin-left: 4.28rem;
-    padding-bottom: 5.75rem; }
+    margin-left: 3.6rem;
+    padding-bottom: 6.1rem; }
   .hero__title {
     margin-bottom: 1rem; }
   .hero__text {
     margin: 0;
     margin-bottom: 3.4rem;
     font-size: 1.57rem;
-    line-height: 131%;
+    line-height: 2.18rem;
     max-width: 36rem; }
   .hero__button {
     margin-right: 16px;
@@ -462,7 +462,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 90px; }
+    max-width: 6.2rem; }
   .hero__scroll-down {
     position: absolute;
     display: flex;
@@ -499,6 +499,7 @@ body {
   .instagram__link {
     display: flex;
     align-items: center;
+    margin-bottom: 1.57rem;
     line-height: 0.8;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -523,9 +524,10 @@ body {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
-  line-height: 1.4; }
+  line-height: 1.3; }
   .title--primary {
-    color: #E3B873; }
+    color: #E3B873;
+    letter-spacing: -0.4px; }
 
 @media screen and (max-width: 1200px) {
   html {
