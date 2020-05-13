@@ -336,9 +336,16 @@ template {
     color: #ffffff; }
 
 .container {
-  width: 96%;
+  width: 98%;
   max-width: 1256px;
   margin: auto; }
+
+.header__container {
+  max-width: 1270px;
+  width: 98%; }
+
+.hero__container {
+  width: 90%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -381,6 +388,7 @@ body {
 
 .logo {
   font-size: 1.075rem;
+  margin-right: 1rem;
   color: #E3B873;
   text-transform: uppercase; }
 
@@ -389,7 +397,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.60rem;
+  margin-right: 2.6rem;
   transition: color 0.2s; }
   .nav__item::after {
     content: '';
@@ -412,6 +420,9 @@ body {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.contacts__button {
+  margin-right: 17px; }
 
 .hero {
   position: relative;
@@ -436,8 +447,6 @@ body {
     max-width: 47.85rem;
     margin-left: 4.28rem;
     padding-bottom: 5.75rem; }
-  .hero__container {
-    width: 90%; }
   .hero__title {
     margin-bottom: 1rem; }
   .hero__text {
