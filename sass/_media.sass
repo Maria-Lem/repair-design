@@ -75,8 +75,14 @@
     &__heading
       font-size: 1.8rem
       letter-spacing: 0.3px
+    &__text
+      max-width: 25.5rem
+      font-size: 1.25rem
+      line-height: 1.7rem
+      margin-top: 1.5rem
+      margin-bottom: 3.2rem
   .types
-    .section-title
+    &__section-title
       margin-bottom: 3.5rem
     &__card
       max-width: 28.5rem
@@ -86,13 +92,24 @@
       margin-top: -12.3rem
       padding: 1.8rem 2rem 3.57rem 2.7rem
       max-width: 22.6rem
+      &--project
+        margin-top: -12.5rem
     &__title
       font-size: 1.25rem
+      &--project
+        font-size: 1.2rem
     &__list
       line-height: 1.9rem
+      &--project
+        max-height: 12.85rem
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
     &__price-tag
       bottom: -1.5rem
       padding: 1rem 2.7rem
+      &--project
+        padding: 1rem 3.8rem
 @media screen and ( max-width: 400px )
   .hero
     &__content
