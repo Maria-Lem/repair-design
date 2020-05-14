@@ -347,6 +347,9 @@ template {
 .hero__container {
   width: 90%; }
 
+.types__container {
+  max-width: 1236px; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -357,20 +360,26 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-size: 1rem; }
 
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image::before, .section-title__image::after {
-      content: '';
-      width: 32px;
-      height: 2px;
-      margin: 0 10px;
-      background-color: #E3B873; }
+img {
+  max-width: 100%; }
+
+.section {
+  padding: 60px 0; }
+  .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    letter-spacing: -0.7px; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__image::before, .section-title__image::after {
+        content: '';
+        width: 32px;
+        height: 2px;
+        margin: 0 10px;
+        background-color: #E3B873; }
 
 .header {
   position: fixed;
@@ -528,6 +537,51 @@ body {
   .title--primary {
     color: #E3B873;
     letter-spacing: -0.4px; }
+
+.types__section-title {
+  margin-bottom: 2.2rem; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin: 0 auto;
+  margin-top: -9.3rem;
+  padding: 1.6rem 2.21rem 3.57rem 2.21rem;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 0.65rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem; }
+
+.card__list {
+  padding: 0 0 0 1.15rem;
+  margin: 0;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595; }
+
+.card__price-tag {
+  position: absolute;
+  left: 0;
+  bottom: -2.48rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 1.21rem 2.7rem; }
 
 @media screen and (max-width: 1200px) {
   html {
