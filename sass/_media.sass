@@ -23,12 +23,11 @@
   .row
     flex-direction: column
     align-items: center
-  .types
-    &__card
-      margin-bottom: 4.29rem
   .card
     &__text
       margin-left: 0
+    &--primary
+      margin-bottom: 4.29rem
 @media screen and ( max-width: 578px )
   .header
     padding: 21px 0
@@ -84,20 +83,24 @@
   .types
     &__section-title
       margin-bottom: 3.5rem
-    &__card
+  .card
+    &--primary
       max-width: 28.5rem
       margin-bottom: 6.4rem
-  .card
+    &--project
+      max-width: 32rem
+      margin-bottom: 6.4rem
+      width: 93%
+      margin-left: auto
+      margin-right: auto
     &__text
       margin-top: -12.3rem
       padding: 1.8rem 2rem 3.57rem 2.7rem
       max-width: 22.6rem
       &--project
-        margin-top: -12.5rem
+        margin-top: -12.25rem
     &__title
       font-size: 1.25rem
-      &--project
-        font-size: 1.2rem
     &__list
       line-height: 1.9rem
       &--project
@@ -110,6 +113,8 @@
       padding: 1rem 2.7rem
       &--project
         padding: 1rem 3.8rem
+    &--transparent
+      background-color: rgba($dark, 0)
 @media screen and ( max-width: 400px )
   .hero
     &__content

@@ -601,6 +601,17 @@ img {
 .card__price-tag--project {
   padding: 1.21rem 5.3rem 1.21rem 2.5rem; }
 
+.card--dark {
+  position: relative; }
+
+.card--transparent {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(19, 19, 19, 0.4);
+  width: 100%;
+  height: 100%; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -626,10 +637,10 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
-  .types__card {
-    margin-bottom: 4.29rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .card--primary {
+    margin-bottom: 4.29rem; } }
 
 @media screen and (max-width: 578px) {
   .header {
@@ -682,19 +693,23 @@ img {
     margin-bottom: 3.2rem; }
   .types__section-title {
     margin-bottom: 3.5rem; }
-  .types__card {
+  .card--primary {
     max-width: 28.5rem;
     margin-bottom: 6.4rem; }
+  .card--project {
+    max-width: 32rem;
+    margin-bottom: 6.4rem;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto; }
   .card__text {
     margin-top: -12.3rem;
     padding: 1.8rem 2rem 3.57rem 2.7rem;
     max-width: 22.6rem; }
     .card__text--project {
-      margin-top: -12.5rem; }
+      margin-top: -12.25rem; }
   .card__title {
     font-size: 1.25rem; }
-    .card__title--project {
-      font-size: 1.2rem; }
   .card__list {
     line-height: 1.9rem; }
     .card__list--project {
@@ -706,7 +721,9 @@ img {
     bottom: -1.5rem;
     padding: 1rem 2.7rem; }
     .card__price-tag--project {
-      padding: 1rem 3.8rem; } }
+      padding: 1rem 3.8rem; }
+  .card--transparent {
+    background-color: rgba(19, 19, 19, 0); } }
 
 @media screen and (max-width: 400px) {
   .hero__content {
