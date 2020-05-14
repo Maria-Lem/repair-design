@@ -19,6 +19,16 @@
       display: none
     &__content
       margin-left: 2.85rem
+@media screen and ( max-width: 760px )
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 4.29rem
+  .card
+    &__text
+      margin-left: 0
 @media screen and ( max-width: 578px )
   .header
     padding: 21px 0
@@ -61,6 +71,28 @@
         width: 100%
       &--outline
         width: 100%
+  .section-title
+    &__heading
+      font-size: 1.8rem
+      letter-spacing: 0.3px
+  .types
+    .section-title
+      margin-bottom: 3.5rem
+    &__card
+      max-width: 28.5rem
+      margin-bottom: 6.4rem
+  .card
+    &__text
+      margin-top: -12.3rem
+      padding: 1.8rem 2rem 3.57rem 2.7rem
+      max-width: 22.6rem
+    &__title
+      font-size: 1.25rem
+    &__list
+      line-height: 1.9rem
+    &__price-tag
+      bottom: -1.5rem
+      padding: 1rem 2.7rem
 @media screen and ( max-width: 400px )
   .hero
     &__content
