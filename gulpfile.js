@@ -12,6 +12,7 @@ const rename = require('gulp-rename');
 // Static server
 function bs() {
   serveSass();
+  minifyCSS();
   browserSync.init({
     server: {
       baseDir: './'
@@ -21,6 +22,7 @@ function bs() {
   watch('./sass/**/*.sass', serveSass);
   watch('./sass/**/*.scss', serveSass);
   watch('./js/*.js').on('change', browserSync.reload);
+  watch('src/*.css', minifyCSS);
 };
 
 function serveSass() {
@@ -33,13 +35,14 @@ function serveSass() {
     .pipe(browserSync.stream());
 };
 
-exports.serve = bs;
-
 function minifyCSS() {
-  return src('css/*.css')
-    .pipe(cleanCSS())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(dest('css'));
+  return src(['css/*.css', '!css/*.min.css'])
+  .pipe(cleanCSS())
+  .pipe(rename({
+    suffix: '.min'
+  }))
+  .pipe(dest('css'));
 };
+
+exports.serve = bs;
+exports.minifyCSS = bs;
