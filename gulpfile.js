@@ -29,7 +29,7 @@ function serveSass() {
     .pipe(autoprefixer({
       cascade: false
     }))
-    .pipe(dest(['./css', '!css/*.min.css']))
+    .pipe(dest('./css'))
     .pipe(browserSync.stream());
 };
 
@@ -41,5 +41,5 @@ function minifyCSS() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(dest('css/*.css'));
+    .pipe(dest('css'));
 };
