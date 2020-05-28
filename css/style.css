@@ -736,7 +736,11 @@ img {
   .card__text {
     margin-left: 0; }
   .card--primary {
-    margin-bottom: 4.29rem; } }
+    margin-bottom: 4.29rem; }
+  .card__list--project .card__item:nth-child(n+8) {
+    display: none; }
+  .card__list--project .card__item:nth-child(7)::after {
+    content: ' ...'; } }
 
 @media screen and (max-width: 578px) {
   .header {
@@ -808,11 +812,6 @@ img {
     font-size: 1.25rem; }
   .card__list {
     line-height: 1.9rem; }
-    .card__list--project {
-      max-height: 12.85rem;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden; }
   .card__price-tag {
     bottom: -1.5rem;
     padding: 1rem 2.7rem; }
