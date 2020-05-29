@@ -737,6 +737,8 @@ img {
     margin-left: 0; }
   .card--primary {
     margin-bottom: 4.29rem; }
+  .card--transparent {
+    background: none; }
   .card__list--project .card__item:nth-child(n+8) {
     display: none; }
   .card__list--project .card__item:nth-child(7)::after {
