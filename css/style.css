@@ -742,7 +742,11 @@ img {
   .card__list--project .card__item:nth-child(n+8) {
     display: none; }
   .card__list--project .card__item:nth-child(7)::after {
-    content: ' ...'; } }
+    content: ' ...'; }
+  .project {
+    background-color: #252525; }
+  .section-title__heading, .section-title__text {
+    color: #ffffff; } }
 
 @media screen and (max-width: 578px) {
   .header {
