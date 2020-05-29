@@ -9,4 +9,12 @@ document.addEventListener('DOMContentLoaded', function(){
     element.addEventListener('click', switchModal);
   });
   closeBtn.addEventListener('click', switchModal);
+  
+  window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      modal.classList.remove('modal--visible');
+    }
+  });
+  
+  // window.addEventListener('click', switchModal);
 });
