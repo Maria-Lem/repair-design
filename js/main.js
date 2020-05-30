@@ -16,5 +16,9 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
   
-  // window.addEventListener('click', switchModal);
+  window.addEventListener("click", e => {
+    if (e.target == modal) {
+      modal.classList.remove('modal--visible');
+    }
+  });
 });
