@@ -41,7 +41,8 @@
     background-color: $dark-mobile
   .section-title
     &__heading, &__text
-      color: $light
+      &--light
+        color: $light
 @media screen and ( max-width: 578px )
   .header
     padding: 21px 0
@@ -104,7 +105,6 @@
     &--project
       max-width: 32rem
       margin-bottom: 6.4rem
-      width: 93%
       margin-left: auto
       margin-right: auto
     &__text
@@ -112,7 +112,7 @@
       padding: 1.8rem 2rem 3.57rem 2.7rem
       max-width: 22.6rem
       &--project
-        margin-top: -12.25rem
+        margin-top: -11.9rem
     &__title
       font-size: 1.25rem
     &__list

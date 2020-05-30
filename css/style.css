@@ -318,6 +318,15 @@ template {
 [hidden] {
   display: none; }
 
+.container {
+  max-width: 1256px;
+  width: 90%;
+  margin: auto; }
+
+.header__container {
+  max-width: 1270px;
+  width: 98%; }
+
 .button {
   padding: 11px 24px;
   border: none;
@@ -378,24 +387,6 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
-
-.container {
-  width: 98%;
-  max-width: 1256px;
-  margin: auto; }
-
-.header__container {
-  max-width: 1270px;
-  width: 98%; }
-
-.hero__container {
-  width: 90%; }
-
-.types__container {
-  max-width: 1236px; }
-
-.project__container {
-  max-width: 1236px; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -643,7 +634,7 @@ img {
   padding: 1.21rem 2.7rem; }
 
 .card__title--project {
-  margin-top: 0.3rem; }
+  margin-top: 0.45rem; }
 
 .card__price-tag--project {
   padding: 1.21rem 5.3rem 1.21rem 2.5rem; }
@@ -752,7 +743,7 @@ img {
     content: ' ...'; }
   .project {
     background-color: #252525; }
-  .section-title__heading, .section-title__text {
+  .section-title__heading--light, .section-title__text--light {
     color: #ffffff; } }
 
 @media screen and (max-width: 578px) {
@@ -812,7 +803,6 @@ img {
   .card--project {
     max-width: 32rem;
     margin-bottom: 6.4rem;
-    width: 93%;
     margin-left: auto;
     margin-right: auto; }
   .card__text {
@@ -820,7 +810,7 @@ img {
     padding: 1.8rem 2rem 3.57rem 2.7rem;
     max-width: 22.6rem; }
     .card__text--project {
-      margin-top: -12.25rem; }
+      margin-top: -11.9rem; }
   .card__title {
     font-size: 1.25rem; }
   .card__list {
