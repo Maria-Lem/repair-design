@@ -63,8 +63,6 @@
     &__content
       padding-bottom: 0
       margin: auto
-    &__scroll-down
-      display: none
     &__title
       max-width: 22.86rem
       margin-bottom: 1.3rem
@@ -124,6 +122,8 @@
         padding: 1rem 3.8rem
     &--transparent
       background-color: rgba($dark, 0)
+  .scroll
+    display: none
 @media screen and ( max-width: 400px )
   .hero
     &__content
@@ -187,8 +187,8 @@
         &:active
           background-color: rgba($dark, 0.8)
           padding: 17px 27px
-    &__scroll-down
-      &:hover
-        border: 2px solid $primary
-      &:active
-        border: 2px solid $light
+  .scroll
+    &:hover
+      border: 2px solid $primary
+    &:active
+      border: 2px solid $light

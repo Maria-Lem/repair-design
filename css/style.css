@@ -388,6 +388,24 @@ template {
     cursor: pointer;
     margin-right: 0.64rem; }
 
+.scroll {
+  font-family: Yeseva One;
+  font-size: 0.85rem;
+  min-width: 17.6rem;
+  min-height: 6.92rem;
+  background-color: #131313;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff; }
+  .scroll::after {
+    content: '';
+    background: url("../img/arrow-down.svg") no-repeat center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #E3B873;
+    border-radius: 50%;
+    margin-left: 15px; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -528,23 +546,7 @@ img {
     justify-content: center;
     align-items: center;
     left: 0;
-    bottom: 0;
-    font-family: Yeseva One;
-    font-size: 0.85rem;
-    min-width: 17.6rem;
-    min-height: 6.92rem;
-    background-color: #131313;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff; }
-    .hero__scroll-down::after {
-      content: '';
-      background: url("../img/arrow-down.svg") no-repeat center;
-      width: 30px;
-      height: 30px;
-      border: 2px solid #E3B873;
-      border-radius: 50%;
-      margin-left: 15px; }
+    bottom: 0; }
 
 .button--outline {
   padding: 17px 45px; }
@@ -653,6 +655,18 @@ img {
   background-color: rgba(19, 19, 19, 0.4);
   width: 100%;
   height: 100%; }
+
+.project {
+  position: relative; }
+  .project__scroll-up {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0; }
+    .project__scroll-up::after {
+      transform: rotate(180deg); }
 
 .modal {
   opacity: 0;
@@ -764,8 +778,6 @@ img {
   .hero__content {
     padding-bottom: 0;
     margin: auto; }
-  .hero__scroll-down {
-    display: none; }
   .hero__title {
     max-width: 22.86rem;
     margin-bottom: 1.3rem;
@@ -821,7 +833,9 @@ img {
     .card__price-tag--project {
       padding: 1rem 3.8rem; }
   .card--transparent {
-    background-color: rgba(19, 19, 19, 0); } }
+    background-color: rgba(19, 19, 19, 0); }
+  .scroll {
+    display: none; } }
 
 @media screen and (max-width: 400px) {
   .hero__content {
@@ -880,7 +894,7 @@ img {
   .hero__button--primary:active {
     background-color: rgba(19, 19, 19, 0.8);
     padding: 17px 27px; }
-  .hero__scroll-down:hover {
+  .scroll:hover {
     border: 2px solid #E3B873; }
-  .hero__scroll-down:active {
+  .scroll:active {
     border: 2px solid #ffffff; } }

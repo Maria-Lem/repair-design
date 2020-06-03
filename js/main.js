@@ -47,11 +47,13 @@ $(document).ready(function () {
       modal.removeClass('modal--visible');
     }
   });
+});
 
-  // $(window).on('click', function(){
-  //   if (modal.hasClass('modal--visible')) {
-  //     modal.removeClass('modal--visible');
-  // }
-  // });
-  
+$(document).ready(function(){
+  var btn = $('.project__scroll-up');
+
+  btn.on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '500');
+  });
 });
