@@ -43,6 +43,8 @@
     &__heading, &__text
       &--light
         color: $light
+  .scroll
+    display: none
 @media screen and ( max-width: 578px )
   .header
     padding: 21px 0
@@ -122,8 +124,13 @@
         padding: 1rem 3.8rem
     &--transparent
       background-color: rgba($dark, 0)
-  .scroll
-    display: none
+  .modal
+    &__dialog
+      width: 90%
+    &__policy
+      margin-bottom: 1.5rem
+    &__button
+      padding: 14px 35px
 @media screen and ( max-width: 400px )
   .hero
     &__content
@@ -135,10 +142,50 @@
         max-width: 28.05rem
       &--outline
         max-width: 28.05rem
+  .policy
+    &__label
+      letter-spacing: 0
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
       display: none
+  .modal
+    &__dialog
+      max-height: 95%
+      padding: 1.5rem 2rem
+    &__close
+      margin: 5px
+    &__title
+      width: 90%
+    &__input
+      margin-bottom: 2.5rem
+@media screen and ( max-height: 430px )
+  .modal
+    &__title
+      margin-bottom: 1.5rem
+    &__input
+      margin-bottom: 1.8rem
+    &__policy
+      margin-bottom: 1.5rem
+@media screen and ( max-height: 380px )
+  .modal
+    &__title
+      font-size: 1.2rem
+      margin-bottom: 1rem
+    &__input
+      font-size: 1.1rem
+    &__button
+      padding: 10px 25px
+@media screen and ( max-height: 350px )
+  .modal
+    &__dialog
+      padding: 1.3rem 2rem
+    &__input
+      margin-bottom: 1rem
+    &__policy
+      margin-bottom: 1.1rem
+    &__button
+      padding: 8px 20px
 //псевдоклассы и псевдоэлементы
 @media screen and ( min-width: 992px )
   .phone

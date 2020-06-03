@@ -66,4 +66,20 @@
     border: 2px solid $primary
     border-radius: 50%
     margin-left: 15px
-      
+.main
+  position: relative
+  &__scroll-up
+    position: absolute
+    transition: background-color 1.5s, opacity 1.5s, visibility 1.5s
+    opacity: 0
+    visibility: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    left: 0
+    bottom: 0
+    &--show
+      opacity: 1
+      visibility: visible
+    &::after
+      transform: rotate(180deg)

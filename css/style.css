@@ -406,6 +406,24 @@ template {
     border-radius: 50%;
     margin-left: 15px; }
 
+.main {
+  position: relative; }
+  .main__scroll-up {
+    position: absolute;
+    transition: background-color 1.5s, opacity 1.5s, visibility 1.5s;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0; }
+    .main__scroll-up--show {
+      opacity: 1;
+      visibility: visible; }
+    .main__scroll-up::after {
+      transform: rotate(180deg); }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -656,18 +674,6 @@ img {
   width: 100%;
   height: 100%; }
 
-.project {
-  position: relative; }
-  .project__scroll-up {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    bottom: 0; }
-    .project__scroll-up::after {
-      transform: rotate(180deg); }
-
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -689,7 +695,8 @@ img {
   .modal__dialog {
     position: relative;
     padding: 2.357rem 3.5rem 1.928rem;
-    max-width: 36.36rem;
+    max-width: 36.14rem;
+    height: 36.36rem;
     color: #ffffff;
     background: #131313 url("../img/bg-lines.svg") no-repeat center; }
   .modal__close {
@@ -704,21 +711,26 @@ img {
     cursor: pointer; }
   .modal__title {
     margin: 0;
-    margin-bottom: 2.428rem;
+    margin-bottom: 2rem;
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
+    line-height: 1.857rem;
     text-align: center; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.482rem; }
+    margin-bottom: 3.2rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1.1rem; }
+      margin-bottom: 0; }
   .modal__policy {
-    margin-bottom: 2.7rem; }
+    margin-bottom: 2.9rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 17px 48px; }
+
+.policy__label {
+  letter-spacing: 1px; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -758,7 +770,9 @@ img {
   .project {
     background-color: #252525; }
   .section-title__heading--light, .section-title__text--light {
-    color: #ffffff; } }
+    color: #ffffff; }
+  .scroll {
+    display: none; } }
 
 @media screen and (max-width: 578px) {
   .header {
@@ -834,8 +848,12 @@ img {
       padding: 1rem 3.8rem; }
   .card--transparent {
     background-color: rgba(19, 19, 19, 0); }
-  .scroll {
-    display: none; } }
+  .modal__dialog {
+    width: 90%; }
+  .modal__policy {
+    margin-bottom: 1.5rem; }
+  .modal__button {
+    padding: 14px 35px; } }
 
 @media screen and (max-width: 400px) {
   .hero__content {
@@ -845,11 +863,49 @@ img {
   .hero__button--primary {
     max-width: 28.05rem; }
   .hero__button--outline {
-    max-width: 28.05rem; } }
+    max-width: 28.05rem; }
+  .policy__label {
+    letter-spacing: 0; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
-    display: none; } }
+    display: none; }
+  .modal__dialog {
+    max-height: 95%;
+    padding: 1.5rem 2rem; }
+  .modal__close {
+    margin: 5px; }
+  .modal__title {
+    width: 90%; }
+  .modal__input {
+    margin-bottom: 2.5rem; } }
+
+@media screen and (max-height: 430px) {
+  .modal__title {
+    margin-bottom: 1.5rem; }
+  .modal__input {
+    margin-bottom: 1.8rem; }
+  .modal__policy {
+    margin-bottom: 1.5rem; } }
+
+@media screen and (max-height: 380px) {
+  .modal__title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem; }
+  .modal__input {
+    font-size: 1.1rem; }
+  .modal__button {
+    padding: 10px 25px; } }
+
+@media screen and (max-height: 350px) {
+  .modal__dialog {
+    padding: 1.3rem 2rem; }
+  .modal__input {
+    margin-bottom: 1rem; }
+  .modal__policy {
+    margin-bottom: 1.1rem; }
+  .modal__button {
+    padding: 8px 20px; } }
 
 @media screen and (min-width: 992px) {
   .phone {

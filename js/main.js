@@ -50,10 +50,23 @@ $(document).ready(function () {
 });
 
 $(document).ready(function(){
-  var btn = $('.project__scroll-up');
+  var btnUp = $('.main__scroll-up');
+      btnDown = $('.hero__scroll-down');
 
-  btn.on('click', function(e){
+  $(window).scroll(function(){
+    if ($(window).scrollTop() > 1000){
+      btnUp.addClass('main__scroll-up--show');
+    } else {
+      btnUp.removeClass('main__scroll-up--show');
+    }
+  });
+
+  btnUp.on('click', function(e){
     e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '500');
+    $('html, body').animate({scrollTop:0}, 500);
+  });
+  btnDown.on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({scrollTop: $('body').height()}, 800);
   });
 });
