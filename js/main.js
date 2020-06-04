@@ -47,6 +47,25 @@ $(document).ready(function () {
       modal.removeClass('modal--visible');
     }
   });
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+  next.css('left', prev.width() + 25 + bullets.width() + 25)
+  bullets.css('left', 10 + prev.width() + 25)
 });
 
 $(document).ready(function(){

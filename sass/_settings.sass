@@ -9,6 +9,9 @@ img
   max-width: 100%
 .section
   padding: 60px 0
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
     text-align: center
     text-transform: uppercase
@@ -36,4 +39,33 @@ img
       text-transform: none
       font-weight: normal
       text-align: center
-        
+    &__heading
+      &--primary
+        margin-top: 0
+        font-size: 1.93rem
+        line-height: 2.64rem
+        color: $primary
+        letter-spacing: -2px
+    &--left
+      text-align: left
+      padding-left: 0.7rem
+    &__word
+      display: flex
+      align-items: center
+      &::after
+          content: ''
+          height: 1px
+          width: 92px
+          margin-left: 2.46rem
+          background-color: $primary
+    &__description
+      max-width: 31.57rem
+      margin-bottom: 2.2rem
+      font-family: 'Futura Book', sans-serif
+      font-size: 1.28rem
+      line-height: 2.07rem
+      letter-spacing: 0
+      text-transform: none
+.main
+  &__completed-projects
+    padding-top: 9rem
