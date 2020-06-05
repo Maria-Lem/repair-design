@@ -19,10 +19,22 @@
       display: none
     &__content
       margin-left: 2.85rem
+  .row
+    &--media
+      flex-direction: column
+      margin-left: 3.57rem
+  .col
+    &-40
+      width: 100%
+      margin-bottom: 3rem
+    &-50
+      width: 100%
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
     align-items: center
+    &--media
+      margin-left: 1.5rem
   .card
     &__text
       margin-left: 0
@@ -85,16 +97,58 @@
         width: 100%
       &--outline
         width: 100%
+  .row
+    &--media
+      margin-left: 0
+  .main
+    &__completed-projects
+      padding-top: 2.5rem
   .section-title
     &__heading
       font-size: 1.8rem
       letter-spacing: 0.3px
+      &--primary
+        letter-spacing: -1.2px
+    &__word
+      &::after
+        display: none
+    &__description
+      margin-top: 2.1rem
+      margin-bottom: 1.9rem
+      max-width: 24.2rem
+      font-size: 1.2rem
+      line-height: 1.9rem
+      letter-spacing: -0.1px
     &__text
       max-width: 25.5rem
       font-size: 1.25rem
       line-height: 1.7rem
       margin-top: 1.5rem
       margin-bottom: 3.2rem
+    &--left
+      padding-left: 0
+  .swiper
+    &-container
+      min-height: 17.7rem
+    &-slide
+      &__text
+        padding-left: 0
+        margin-bottom: 1.4rem
+        flex-basis: 47%
+      &__heading
+        margin-bottom: 1rem
+        font-size: 1.1rem
+      &__value
+        line-height: 1.45rem
+      &__image
+        max-width: 340px
+        max-height: 202px
+        object-fit: cover
+    &-button
+      &-prev
+        left: 0
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+    margin-right: 0.8rem
   .types
     &__section-title
       margin-bottom: 3.5rem

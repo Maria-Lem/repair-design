@@ -513,6 +513,9 @@ img {
 .main__completed-projects {
   padding-top: 9rem; }
 
+.main__controle {
+  padding-top: 0.9rem; }
+
 .header {
   position: fixed;
   left: 0;
@@ -845,12 +848,22 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 2.85rem; } }
+    margin-left: 2.85rem; }
+  .row--media {
+    flex-direction: column;
+    margin-left: 3.57rem; }
+  .col-40 {
+    width: 100%;
+    margin-bottom: 3rem; }
+  .col-50 {
+    width: 100%; } }
 
 @media screen and (max-width: 760px) {
   .row {
     flex-direction: column;
     align-items: center; }
+    .row--media {
+      margin-left: 1.5rem; }
   .card__text {
     margin-left: 0; }
   .card--primary {
@@ -906,15 +919,52 @@ img {
       width: 100%; }
     .hero__button--outline {
       width: 100%; }
+  .row--media {
+    margin-left: 0; }
+  .main__completed-projects {
+    padding-top: 2.5rem; }
   .section-title__heading {
     font-size: 1.8rem;
     letter-spacing: 0.3px; }
+    .section-title__heading--primary {
+      letter-spacing: -1.2px; }
+  .section-title__word::after {
+    display: none; }
+  .section-title__description {
+    margin-top: 2.1rem;
+    margin-bottom: 1.9rem;
+    max-width: 24.2rem;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    letter-spacing: -0.1px; }
   .section-title__text {
     max-width: 25.5rem;
     font-size: 1.25rem;
     line-height: 1.7rem;
     margin-top: 1.5rem;
     margin-bottom: 3.2rem; }
+  .section-title--left {
+    padding-left: 0; }
+  .swiper-container {
+    min-height: 17.7rem; }
+  .swiper-slide__text {
+    padding-left: 0;
+    margin-bottom: 1.4rem;
+    flex-basis: 47%; }
+  .swiper-slide__heading {
+    margin-bottom: 1rem;
+    font-size: 1.1rem; }
+  .swiper-slide__value {
+    line-height: 1.45rem; }
+  .swiper-slide__image {
+    max-width: 340px;
+    max-height: 202px;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .swiper-button-prev {
+    left: 0; }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 0.8rem; }
   .types__section-title {
     margin-bottom: 3.5rem; }
   .card--primary {
