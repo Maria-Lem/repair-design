@@ -48,10 +48,10 @@ $(document).ready(function () {
     }
   });
 
-  var mySwiper = new Swiper ('.swiper-container', {
+  var swiper1 = new Swiper ('.swiper-one', {
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.pagination-one',
       type: 'bullets',
     },
     navigation: {
@@ -59,6 +59,22 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // var swiper2 = new Swiper ('.swiper-container.swiper-two', {
+  //   loop: true,
+  //   pagination: {
+  //     el: '.swiper-pagination.pagination-two',
+  //     type: 'bullets',
+  //   },
+  //   pagination: {
+  //     el: '.pagination-fraction',
+  //     type: 'fraction',
+  //   },
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  // });
 
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
