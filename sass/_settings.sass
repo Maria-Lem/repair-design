@@ -49,6 +49,12 @@ img
     &--left
       text-align: left
       padding-left: 0.7rem
+    &__subtitle
+      font-family: 'Futura Book', sans-serif
+      font-weight: 500
+      font-size: 1.07rem
+      line-height: 1.5rem
+      text-transform: uppercase
     &__word
       display: flex
       align-items: center
@@ -57,6 +63,13 @@ img
           height: 1px
           width: 92px
           margin-left: 2.46rem
+          background-color: $primary
+      &--steps
+        &::after
+          content: ''
+          height: 1px
+          width: 92px
+          margin-left: 3.46rem
           background-color: $primary
     &__description
       max-width: 31.57rem
