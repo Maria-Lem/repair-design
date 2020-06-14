@@ -49,6 +49,9 @@ $(document).ready(function () {
   });
 
   var swiper1 = new Swiper ('.swiper-container.swiper-one', {
+    spaceBetween: 5,
+    slidesPerView: 1,
+    centeredSlides: true,
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -60,9 +63,14 @@ $(document).ready(function () {
     },
   });
 
-  
+  $(".swiper-pagination").clone('true').addClass('swiper-pagination-fraction').appendTo('.swiper-two');
   var swiper2 = new Swiper ('.swiper-container.swiper-two', {
+    spaceBetween: 10,
     loop: true,
+    pagination: {
+      el: '.swiper-pagination-fraction',
+      type: 'fraction',
+    },
     pagination: {
       el: '.swiper-pagination-two',
       type: 'bullets',
@@ -73,17 +81,48 @@ $(document).ready(function () {
     },
     controller: {
       inverse: true,
-      control: galleryThumbs,
+      control: galleryThumbs, galleryTop,
       by: 'slide',
     },
   });
+
+  // for (var i = 1; i < swiper.slides.length - 1; i++){
+  //   if ( i === 1){ 
+  //     // add active class if it is the first bullet
+  //     $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'swiper-pagination-bullet-active' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
+  //   } else {
+  //     $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
+  //   }         
+  // }
+  // var bullets = $('.swiper-pagination-bullet');
+  // swiper.on('slideChange', function () {
+  //   // Get current slide from fraction pagination number
+  //   var slide = "slide"+($('.swiper-pagination-current').html());
+  //   // Remove active class from all bullets
+  //   bullets.removeClass("swiper-pagination-bullet-active");
+  //   // Check each bullet element if it has slideNumber class
+  //   $.each(bullets, function (index, value) {
+  //     if($(this).hasClass(slide)) {
+  //       $(this).addClass("swiper-pagination-bullet-active");
+  //       return false;
+  //     }
+  //   });
+  // });
 
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() + 25 + bullets.width() + 25)
+  next.css('left', 10 + prev.width() + 25 + bullets.width() + 20)
   bullets.css('left', 10 + prev.width() + 25)
+  // swiper1.navigation.update();
+
+  var prev2 = $('.swiper-button-prev-two');
+  var bullets2 = $('.swiper-pagination-two');
+  var next2 = $('.swiper-button-next-two');
+
+  next2.css('left', 10 + prev2.width() + 10 + bullets2.width() + 10)
+  bullets2.css('left', 10 + prev2.width() + 10)
 
   var galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 10,
@@ -95,6 +134,7 @@ $(document).ready(function () {
   var galleryTop = new Swiper('.gallery-top', {
     spaceBetween: 10,
     slidesPerView: 1,
+    loop: true,
     thumbs: {
       swiper: galleryThumbs
     },
@@ -105,32 +145,8 @@ $(document).ready(function () {
     },
   });
 
-
-  // galleryTop.controller = swiper2;
-  // swiper2.controller = galleryTop;
-  
-  // var nextTwo = $('.swiper-button-next-two');
-  // var prevTwo = $('.swiper-button-prev-two');
-  // var bulletsTwo = $('.swiper-pagination-two');
-
-  // nextTwo.css('left', prevTwo.width() + 10 + bulletsTwo.width() + 10)
-  // bulletsTwo.css('left', 10 + prevTwo.width() + 10)
-
-  // var swiper2 = new Swiper ('.swiper-container.swiper-two', {
-  //   loop: true,
-  //   pagination: {
-  //     el: '.swiper-pagination.pagination-two',
-  //     type: 'bullets',
-  //   },
-  //   pagination: {
-  //     el: '.pagination-fraction',
-  //     type: 'fraction',
-  //   },
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
-  // });
+  galleryTop.controller.control = swiper2;
+  swiper2.controller.control = galleryTop;
 
 });
 

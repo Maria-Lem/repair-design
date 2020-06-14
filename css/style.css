@@ -844,6 +844,12 @@ img {
     height: 1px;
     background-color: rgba(227, 184, 115, 0.3); }
 
+.swiper-pagination-fraction {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #ffffff; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -925,6 +931,8 @@ img {
   .row--media {
     flex-direction: column;
     margin-left: 3.57rem; }
+  .completed-projects__col-50 {
+    padding-right: 0; }
   .col-40 {
     width: 100%;
     margin-bottom: 3rem; }
