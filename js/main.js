@@ -113,9 +113,8 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', 10 + prev.width() + 25 + bullets.width() + 20)
+  next.css('left', 10 + prev.width() + 25 + bullets.width() + 18)
   bullets.css('left', 10 + prev.width() + 25)
-  // swiper1.navigation.update();
 
   var prev2 = $('.swiper-button-prev-two');
   var bullets2 = $('.swiper-pagination-two');
