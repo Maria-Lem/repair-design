@@ -60,12 +60,13 @@
           &__item:nth-child(7)::after
             content: ' ...'
   .control
+    position: relative
     background-color: $dark
     &__text
       color: $light
     &__form
       align-items: center
-      width: 28rem
+      max-width: 28rem
       height: 22.2rem
       color: $light
     &__input-group
@@ -76,8 +77,12 @@
       &::placeholder
         color: $light
     &__button
+      position: absolute
+      bottom: -24px
+      padding: 1.4rem 10.7rem
       flex-basis: 100%
       order: 5
+      cursor: pointer
     &__policy
       flex-basis: 79%
   .label
@@ -192,13 +197,14 @@
     &__section-title
       margin-top: -33.3rem
     &__video
-      width: 28rem
+      max-width: 28rem
       min-height: 17.1rem
       margin-top: 3.4rem
       margin-bottom: 2.4rem
       background-size: 100% 100%
     &__text
       margin-bottom: 2.5rem
+      max-width: 28.1rem
       font-size: 1.15rem
       line-height: 2rem
       &::before
@@ -211,10 +217,13 @@
     &__policy
       margin-top: 0.9rem
       margin-bottom: 5.2rem
-      flex-basis: 77%
-      font-size: 1.3rem
+      max-width: 22.43rem
+      flex-basis: 100%
+      &-label
+        font-size: 1.25rem
+        letter-spacing: 0.5px
     &__button
-      padding: 1.29rem
+      bottom: -24px
       font-size: 1.3rem
   .video
     &__play
@@ -268,9 +277,14 @@
         max-width: 28.05rem
       &--outline
         max-width: 28.05rem
-  .policy
-    &__label
-      letter-spacing: 0
+  .modal
+    &__policy
+      &-label
+        letter-spacing: 0
+@media screen and ( max-width: 374px )
+  .control
+    &__button
+      padding: 1.4rem 7.7rem
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
