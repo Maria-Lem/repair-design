@@ -59,6 +59,30 @@
             display: none
           &__item:nth-child(7)::after
             content: ' ...'
+  .control
+    background-color: $dark
+    &__text
+      color: $light
+    &__form
+      align-items: center
+      width: 28rem
+      height: 22.2rem
+      color: $light
+    &__input-group
+      flex-basis: 100%
+    &__input
+      color: $light
+      border-bottom: 1px solid $light
+      &::placeholder
+        color: $light
+    &__button
+      flex-basis: 100%
+      order: 5
+    &__policy
+      flex-basis: 79%
+  .label
+    &--grey
+      color: rgba($light, 0.5)
   .project
     background-color: $dark-mobile
   .section-title
@@ -163,6 +187,40 @@
         left: 0
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
     margin-right: 0.8rem
+  .control
+    padding-bottom: 20px
+    &__section-title
+      margin-top: -33.3rem
+    &__video
+      width: 28rem
+      min-height: 17.1rem
+      margin-top: 3.4rem
+      margin-bottom: 2.4rem
+      background-size: 100% 100%
+    &__text
+      margin-bottom: 2.5rem
+      font-size: 1.15rem
+      line-height: 2rem
+      &::before
+        margin-bottom: 1.3rem
+    &__input-group
+      &--name
+        margin-bottom: 5.2rem
+    &__input
+      font-size: 1.5rem
+    &__policy
+      margin-top: 0.9rem
+      margin-bottom: 5.2rem
+      flex-basis: 77%
+      font-size: 1.3rem
+    &__button
+      padding: 1.29rem
+      font-size: 1.3rem
+  .video
+    &__play
+      width: 5rem
+  .label
+    font-size: 1.2rem
   .types
     &__section-title
       margin-bottom: 3.5rem

@@ -18,13 +18,22 @@
   font-size: 1.07rem
   &--light
     color: rgba($light, 0.5)
+  &--grey
+    color: rgba($dark-text, 0.5)
 .input
   padding: 0.5rem 0
+  outline: none
   background-color: transparent
   border: none
   border-bottom: 1px solid rgba(54, 54, 54, 0.3)
   font-size: 1.285rem
-.form
+.control
+  &__input
+    padding-top: 0.2rem
+    color: $dark
+    &::placeholder
+      color: $dark
+.modal
   &__input
     border-bottom: 1px solid rgba(255, 255, 255, 0.15)
     color: $light
