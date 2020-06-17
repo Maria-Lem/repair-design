@@ -77,9 +77,10 @@
       &::placeholder
         color: $light
     &__button
-      position: absolute
-      bottom: -24px
-      padding: 1.4rem 10.7rem
+      position: relative
+      bottom: -35%
+      padding: 1.4rem
+      max-width: 28.3rem
       flex-basis: 100%
       order: 5
       cursor: pointer
@@ -223,7 +224,7 @@
         font-size: 1.25rem
         letter-spacing: 0.5px
     &__button
-      bottom: -24px
+      bottom: 0
       font-size: 1.3rem
   .video
     &__play
@@ -281,10 +282,6 @@
     &__policy
       &-label
         letter-spacing: 0
-@media screen and ( max-width: 374px )
-  .control
-    &__button
-      padding: 1.4rem 7.7rem
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
