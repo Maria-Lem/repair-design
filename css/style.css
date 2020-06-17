@@ -323,7 +323,7 @@ template {
   width: 90%;
   margin: auto; }
 
-.header__container {
+.container--wide {
   max-width: 1270px;
   width: 98%; }
 
@@ -421,6 +421,24 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
+
+.footer__policy-label {
+  font-size: 1.142rem; }
+
+.footer__input {
+  color: #ffffff; }
+  .footer__input::-webkit-input-placeholder {
+    color: #ffffff; }
+  .footer__input::-moz-placeholder {
+    color: #ffffff; }
+  .footer__input:-ms-input-placeholder {
+    color: #ffffff; }
+  .footer__input::-ms-input-placeholder {
+    color: #ffffff; }
+  .footer__input::placeholder {
+    color: #ffffff; }
 
 .scroll {
   font-family: Yeseva One;
@@ -937,6 +955,62 @@ img {
   left: 0;
   color: #ffffff; }
 
+.clients {
+  padding-bottom: 30rem; }
+
+.section--footer {
+  padding-bottom: 0; }
+
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -15.9rem;
+    padding: 2.5rem;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    margin-top: 0;
+    margin-bottom: 3.4rem;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.14rem;
+    margin: auto; }
+  .footer__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 44%;
+    margin-bottom: 3.5rem; }
+    .footer__input-group--full-width {
+      flex-basis: 100%;
+      margin-bottom: 2.2rem; }
+  .footer__input {
+    padding-top: 0; }
+  .footer__policy {
+    flex-basis: 96%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.2rem 4.4rem;
+    font-size: 1.1rem; }
+  .footer__menu {
+    padding: 3.428rem 0;
+    background-color: #131313; }
+
+.logo--footer {
+  margin-left: 0.5rem; }
+
+.button--footer {
+  margin-right: 8px; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -1083,7 +1157,7 @@ img {
   .label--grey {
     color: rgba(255, 255, 255, 0.5); }
   .project {
-    background-color: #252525; }
+    background-color: #131313; }
   .section-title__heading--light, .section-title__text--light {
     color: #ffffff; }
   .scroll {
@@ -1239,6 +1313,35 @@ img {
       padding: 1rem 3.8rem; }
   .card--transparent {
     background-color: rgba(19, 19, 19, 0); }
+  .container {
+    width: 100%; }
+  .footer {
+    background: none;
+    background-color: #131313; }
+    .footer__menu {
+      display: none; }
+    .footer__wrap {
+      margin: 0;
+      padding: 1.5rem;
+      background-color: #131313; }
+    .footer__title {
+      margin-bottom: 4.6rem;
+      font-size: 1.65rem; }
+    .footer__input-group {
+      flex-basis: 100%;
+      margin-bottom: 5.5rem; }
+      .footer__input-group--full-width {
+        margin-bottom: 0.6rem; }
+    .footer__input {
+      font-size: 1.5rem; }
+    .footer__policy {
+      margin-bottom: 5.6rem;
+      max-width: 21.7rem; }
+      .footer__policy-label {
+        font-size: 1.3rem; }
+    .footer__button {
+      padding: 1.5rem;
+      flex-basis: 100%; }
   .modal__dialog {
     width: 90%; }
   .modal__policy {
