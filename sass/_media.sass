@@ -95,6 +95,11 @@
       cursor: pointer
     &__policy
       flex-basis: 79%
+      &-label
+        justify-content: flex-start
+    &__policy >
+      .invalid
+        left: 0
   .label
     &--grey
       color: rgba($light, 0.5)
@@ -333,6 +338,7 @@
         margin-bottom: 0.6rem
     &__input
       font-size: 1.5rem
+      border-bottom: 1px solid $light
     &__policy
       margin-bottom: 5.6rem
       max-width: 21.7rem

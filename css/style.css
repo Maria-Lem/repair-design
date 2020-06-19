@@ -1066,7 +1066,7 @@ img {
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
   .footer__wrap {
-    background-color: #181818;
+    background: #181818 url("../img/bg-lines.svg") no-repeat center;
     max-width: 63.07rem;
     margin: auto;
     margin-top: -15.9rem;
@@ -1102,9 +1102,6 @@ img {
     flex-direction: column;
     flex-basis: 96%;
     margin-bottom: 3.6rem; }
-    .footer__policy div.invalid {
-      order: 7;
-      text-align: center; }
   .footer__button {
     margin: auto;
     padding: 1.2rem 4.4rem;
@@ -1275,6 +1272,10 @@ img {
       cursor: pointer; }
     .control__policy {
       flex-basis: 79%; }
+      .control__policy-label {
+        justify-content: flex-start; }
+    .control__policy > .invalid {
+      left: 0; }
   .label--grey {
     color: rgba(255, 255, 255, 0.5); }
   .steps {
@@ -1493,7 +1494,8 @@ img {
       .footer__input-group--full-width {
         margin-bottom: 0.6rem; }
     .footer__input {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      border-bottom: 1px solid #ffffff; }
     .footer__policy {
       margin-bottom: 5.6rem;
       max-width: 21.7rem; }
