@@ -303,7 +303,8 @@
   .clients
     display: none
   .container
-    width: 100%
+    &--media
+      width: 100%
   .footer
     background: none
     background-color: $dark
@@ -332,6 +333,13 @@
     &__button
       padding: 1.5rem
       flex-basis: 100%
+    &__policy >
+      .invalid
+        left: 0
+    &__input-group >
+      .invalid
+        top: 0
+        right: 0
   .modal
     &__dialog
       width: 90%

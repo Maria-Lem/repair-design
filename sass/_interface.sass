@@ -27,10 +27,14 @@
   border: none
   border-bottom: 1px solid rgba(54, 54, 54, 0.3)
   font-size: 1.285rem
+  &-group
+    position: relative
 .control
   &__input
     padding-top: 0.2rem
     color: $dark
+    &-group
+      position: relative
     &::placeholder
       color: $dark
 .modal
@@ -40,10 +44,11 @@
     &::placeholder
       color: $light
 .policy
+  position: relative
   &__checkbox
     opacity: 0
     visibility: hidden
-    &:checked +
+    &:checked ~
       .policy__label
         &::before
           background: $primary url('../img/check.svg') no-repeat center / 0.8rem
@@ -105,8 +110,22 @@
       transform: rotate(180deg)
 div
   &.invalid
-    padding: 5px
+    position: absolute
+    bottom: -18px
     color: tomato
 input
   &.invalid
     border-bottom: 1px solid tomato
+.control
+  &__policy >
+    .invalid
+      left: 35%
+.footer
+  &__policy >
+    .invalid
+      left: 29%
+.modal
+  &__input-group >
+    .invalid
+      top: 0
+      right: 20px
