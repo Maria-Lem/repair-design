@@ -1473,6 +1473,8 @@ img {
     display: none; }
   .clients {
     display: none; }
+  .container--wide {
+    width: 90%; }
   .container--media {
     width: 100%; }
   .footer {
@@ -1484,6 +1486,7 @@ img {
       margin: 0;
       margin-top: -2.5rem;
       padding: 1.5rem;
+      background: none;
       background-color: #131313; }
     .footer__title {
       margin-bottom: 4.6rem;
@@ -1634,4 +1637,6 @@ img {
   .modal__button:active, .control__button:active {
     padding: 16px 47px; }
   .control__button:active {
-    padding: 0.79rem 4.35rem; } }
+    padding: 0.79rem 4.35rem; }
+  .footer__button:active {
+    padding: 1.13rem 4.3rem; } }

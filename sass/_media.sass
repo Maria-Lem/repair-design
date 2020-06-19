@@ -316,6 +316,8 @@
   .clients
     display: none
   .container
+    &--wide
+      width: 90%
     &--media
       width: 100%
   .footer
@@ -327,6 +329,7 @@
       margin: 0
       margin-top: -2.5rem
       padding: 1.5rem
+      background: none
       background-color: $dark
     &__title
       margin-bottom: 4.6rem
@@ -499,3 +502,7 @@
       &__button
         &:active
           padding: 0.79rem 4.35rem
+  .footer
+      &__button
+        &:active
+          padding: 1.13rem 4.3rem
