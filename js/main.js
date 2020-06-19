@@ -215,10 +215,6 @@ $(document).ready(function () {
       },
       userPhone: "required",
       policyCheckbox: "required"
-      // policyCheckbox: function(){
-      //     if ($('.policy__checkbox').is(":checked"))
-      //     addClass('.policy__checkbox:checked + .policy__label::before');
-      // }
     }, // сообщения
     messages: {
       userName: {
