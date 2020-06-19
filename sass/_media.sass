@@ -48,6 +48,8 @@
   .card
     &__text
       margin-left: 0
+      &--team
+        margin-left: auto
     &--primary
       margin-bottom: 4.29rem
     &--transparent
@@ -89,12 +91,19 @@
   .label
     &--grey
       color: rgba($light, 0.5)
-  .project
+  .steps
+    display: none
+  .project, .team
     background-color: $dark
   .section-title
     &__heading, &__text
       &--light
         color: $light
+  .team
+    &__section-title
+      margin-top: -10.1rem
+  .representation
+    color: $light
   .scroll
     display: none
 @media screen and ( max-width: 578px )
@@ -150,6 +159,7 @@
     &__heading
       font-size: 1.8rem
       letter-spacing: 0.3px
+      font-weight: normal
       &--primary
         letter-spacing: -1.2px
     &__word
@@ -249,8 +259,19 @@
       max-width: 22.6rem
       &--project
         margin-top: -11.9rem
+      &--team
+        max-width: 19.4rem
+        padding: 1.57rem
+        padding-bottom: 1.71rem
+        margin-top: -6.65rem
+        margin-left: 2.7rem
+        margin-bottom: 0
     &__title
       font-size: 1.25rem
+      &--team
+        font-size: 1.5rem
+    &__subtitle
+      font-size: 1.5rem
     &__list
       line-height: 1.9rem
     &__price-tag
@@ -258,8 +279,29 @@
       padding: 1rem 2.7rem
       &--project
         padding: 1rem 3.8rem
+      &--team
+        bottom: -2.6rem
+        font-size: 1rem
+        padding: 1.3rem 2.7rem
     &--transparent
       background-color: rgba($dark, 0)
+  .image
+    &-wrap
+      width: 304px
+  .team
+    &__row
+      margin-left: 35px
+    &__text
+      max-width: 28rem
+      margin-bottom: 6.7rem
+    &__card
+      margin-bottom: 10rem
+      &--media
+        margin-bottom: 0
+  .representation
+    display: none
+  .clients
+    display: none
   .container
     width: 100%
   .footer
@@ -269,6 +311,7 @@
       display: none
     &__wrap
       margin: 0
+      margin-top: -2.5rem
       padding: 1.5rem
       background-color: $dark
     &__title
@@ -324,7 +367,8 @@
     &__title
       width: 90%
     &__input
-      margin-bottom: 2.5rem
+      &-group
+        margin-bottom: 2.5rem
 @media screen and ( max-height: 430px )
   .header
     padding: 15px 0
@@ -332,7 +376,8 @@
     &__title
       margin-bottom: 1.5rem
     &__input
-      margin-bottom: 1.8rem
+      &-group
+        margin-bottom: 1.8rem
     &__policy
       margin-bottom: 1.5rem
 @media screen and ( max-height: 380px )
@@ -357,7 +402,8 @@
     &__dialog
       padding: 1.3rem 2rem
     &__input
-      margin-bottom: 1rem
+      &-group
+        margin-bottom: 1rem
     &__policy
       margin-bottom: 1.1rem
     &__button
@@ -423,3 +469,11 @@
       border: 2px solid $primary
     &:active
       border: 2px solid $light
+  .modal, .control
+    &__button
+      &:active
+        padding: 16px 47px
+  .control
+      &__button
+        &:active
+          padding: 0.79rem 4.35rem

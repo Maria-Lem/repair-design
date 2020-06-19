@@ -20,7 +20,7 @@
     position: relative
     padding: 2.357rem 3.5rem 1.928rem
     max-width: 36.14rem
-    height: 36.36rem
+    min-height: 36.36rem
     color: $light
     background: $dark url('../img/bg-lines.svg') no-repeat center
   &__close
@@ -44,14 +44,21 @@
     display: flex
     flex-direction: column
   &__input
-    margin-bottom: 3.2rem
+    &-group
+      margin-bottom: 3.2rem
+      display: flex
+      flex-direction: column
+      &--last
+        margin-bottom: 0.1rem
     &:last-of-type
       margin-bottom: 0
   &__policy
+    display: flex
+    flex-direction: column
     margin-bottom: 2.9rem
+    div
+      &.invalid
+        order: 5
   &__button
     align-self: flex-end
     padding: 17px 48px
-  &__policy
-    &__label
-      letter-spacing: 1px

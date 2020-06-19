@@ -47,12 +47,19 @@
     padding: 0.79rem 4.4rem
     font-size: 1.1rem
   &__policy
+    display: flex
+    flex-direction: column
+    justify-content: center
     flex-basis: 92%
     margin-top: 1.4rem
     &-label
       justify-content: center
       font-size: 1.11rem
       letter-spacing: 0.3px
+    div
+      &.invalid
+        order: 7
+        text-align: center
 .video
   &__play
     position: relative

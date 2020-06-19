@@ -50,6 +50,7 @@
   &__label
     display: flex
     align-items: center
+    font-size: 1.142rem
     &::before
       content: ''
       width: 18px
@@ -102,3 +103,10 @@
       visibility: visible
     &::after
       transform: rotate(180deg)
+div
+  &.invalid
+    padding: 5px
+    color: tomato
+input
+  &.invalid
+    border-bottom: 1px solid tomato

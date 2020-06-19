@@ -169,4 +169,92 @@ $(document).ready(function () {
 
   new WOW().init();
 
+  //Валидация формы
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true} строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule правило-объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+      },
+      policyCheckbox: "required"
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух символов",
+        maxlength: "Имя не длиннее 15 символов"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      },
+      policyCheckbox: "Примите соглашение"
+    }
+  });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true} строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      policyCheckbox: "required"
+      // policyCheckbox: function(){
+      //     if ($('.policy__checkbox').is(":checked"))
+      //     addClass('.policy__checkbox:checked + .policy__label::before');
+      // }
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух символов",
+        maxlength: "Имя не длиннее 15 символов"
+      },
+      userPhone: "Заполните поле",
+      policyCheckbox: "Примите соглашение"
+    }
+  });
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true} строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userQuestion: "required",
+      policyCheckbox: "required"
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух символов",
+        maxlength: "Имя не длиннее 15 символов"
+      },
+      userPhone: "Заполните поле",
+      userQuestion: "Заполните поле",
+      policyCheckbox: "Примите соглашение"
+    }
+  });
+  // маска для номера телефона
+  $('[type=tel]').mask('+7(000) 000-00-00');
 });
