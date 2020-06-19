@@ -1432,10 +1432,10 @@ img {
       margin-top: -11.9rem; }
     .card__text--team {
       max-width: 19.4rem;
-      padding: 1.57rem;
+      padding: 1.7rem;
       padding-bottom: 1.71rem;
-      margin-top: -6.65rem;
-      margin-left: 2.7rem;
+      margin-top: -6.5rem;
+      margin-left: 2.5rem;
       margin-bottom: 0; }
   .card__title {
     font-size: 1.25rem; }
@@ -1457,14 +1457,15 @@ img {
   .card--transparent {
     background-color: rgba(19, 19, 19, 0); }
   .image-wrap {
-    width: 304px; }
+    max-width: 304px;
+    width: 98%; }
   .team__row {
-    margin-left: 35px; }
+    margin-left: 3rem; }
   .team__text {
     max-width: 28rem;
-    margin-bottom: 6.7rem; }
+    margin-bottom: 6.8rem; }
   .team__card {
-    margin-bottom: 10rem; }
+    margin-bottom: 10.5rem; }
     .team__card--media {
       margin-bottom: 0; }
   .representation {
