@@ -348,7 +348,7 @@ template {
   justify-content: space-evenly; }
 
 .team__col-30 {
-  flex-basis: 22%; }
+  flex-basis: 20%; }
 
 .button {
   padding: 11px 24px;
@@ -559,6 +559,8 @@ img {
         line-height: 2.64rem;
         color: #E3B873;
         letter-spacing: -2px; }
+      .section-title__heading--team {
+        margin-bottom: 1.1rem; }
     .section-title--left {
       text-align: left;
       padding-left: 0.7rem; }
@@ -1015,7 +1017,7 @@ img {
   .card__text--team {
     max-width: 16.64rem;
     padding: 1.57rem;
-    margin-top: -6rem;
+    margin-top: -5.8rem;
     margin-bottom: 5.7rem;
     text-align: center; }
   .card__icon {
@@ -1026,6 +1028,7 @@ img {
     padding: 13px;
     box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
   .card__image--team {
+    max-width: none;
     width: 304px; }
   .card__title--team {
     font-weight: normal; }
@@ -1120,6 +1123,8 @@ img {
     position: relative;
     padding: 3.428rem 0;
     background-color: #131313; }
+  .footer__map {
+    position: relative; }
 
 .logo--footer {
   margin-left: 0.5rem; }
@@ -1446,9 +1451,11 @@ img {
       max-width: 19.4rem;
       padding: 1.7rem;
       padding-bottom: 1.71rem;
-      margin-top: -6.5rem;
+      margin-top: -6.4rem;
       margin-left: 2.5rem;
       margin-bottom: 0; }
+  .card__image--team {
+    max-width: 100%; }
   .card__title {
     font-size: 1.25rem; }
     .card__title--team {
