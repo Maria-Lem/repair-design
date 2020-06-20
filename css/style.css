@@ -1093,6 +1093,10 @@ img {
     font-weight: normal;
     font-size: 1.428rem;
     text-align: center; }
+    .footer__title--primary {
+      max-width: 35.71rem;
+      margin-bottom: 1.857rem;
+      color: #E3B873; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -1119,12 +1123,33 @@ img {
     margin: auto;
     padding: 1.2rem 4.4rem;
     font-size: 1.1rem; }
+  .footer__information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer__phone {
+    text-decoration: none; }
+  .footer__icon {
+    background-color: #E3B873;
+    padding: 8px;
+    margin-right: 1.07rem;
+    border-radius: 50%; }
+  .footer__map {
+    max-width: 66.07rem;
+    margin-bottom: 4.71rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
   .footer__menu {
     position: relative;
     padding: 3.428rem 0;
     background-color: #131313; }
-  .footer__map {
-    position: relative; }
+
+.icon-wrap {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem; }
 
 .logo--footer {
   margin-left: 0.5rem; }
@@ -1477,14 +1502,17 @@ img {
     background-color: rgba(19, 19, 19, 0); }
   .image-wrap {
     max-width: 304px;
-    width: 98%; }
+    width: 100%; }
   .team__row {
-    margin-left: 3rem; }
+    margin: auto;
+    max-width: 337px; }
+  .team__col-30--media {
+    margin-left: 35px; }
   .team__text {
     max-width: 28rem;
     margin-bottom: 6.8rem; }
   .team__card {
-    margin-bottom: 10.5rem; }
+    margin-bottom: 9.7rem; }
     .team__card--media {
       margin-bottom: 0; }
   .representation {

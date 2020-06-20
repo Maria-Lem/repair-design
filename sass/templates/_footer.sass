@@ -28,6 +28,10 @@
     font-weight: normal
     font-size: 1.428rem
     text-align: center
+    &--primary
+      max-width: 35.71rem
+      margin-bottom: 1.857rem
+      color: $primary
   &__form
     display: flex
     flex-wrap: wrap
@@ -54,12 +58,32 @@
     margin: auto
     padding: 1.2rem 4.4rem
     font-size: 1.1rem
+  &__information
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__phone
+    text-decoration: none
+  &__icon
+    background-color: $primary
+    padding: 8px
+    margin-right: 1.07rem
+    border-radius: 50%
+  &__map
+    max-width: 66.07rem
+    margin-bottom: 4.71rem
+    filter: grayscale(100%)
   &__menu
     position: relative
     padding: 3.428rem 0
     background-color: $dark
-  &__map
-    position: relative
+.icon
+  &-wrap
+    display: flex
+    flex-direction: row
+    margin-bottom: 3rem
 .logo
   &--footer
     margin-left: 0.5rem
