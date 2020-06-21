@@ -1071,7 +1071,7 @@ img {
   .clients__image-wrap {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-right: 1.64rem;
     width: 76px;
     height: 76px;
@@ -1093,6 +1093,12 @@ img {
   max-width: none;
   -o-object-fit: cover;
   object-fit: cover; }
+
+.card__image--center {
+  padding-top: 27px; }
+
+.card__image--last {
+  padding-bottom: 1px; }
 
 .card__title--clients {
   margin-bottom: 0;
