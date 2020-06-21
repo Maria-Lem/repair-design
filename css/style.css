@@ -1318,8 +1318,13 @@ img {
     max-width: 33rem; }
   .team__row {
     justify-content: space-between; }
+  .clients__image-wrap {
+    width: 76px;
+    height: 76px; }
   .card__price-tag--clients {
-    width: 95%; } }
+    width: 95%; }
+  .card__title--clients {
+    max-width: 8.86rem; } }
 
 @media screen and (min-width: 1200px) {
   .hero {
