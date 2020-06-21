@@ -59,14 +59,14 @@ $(document).ready(function () {
     }
   });
 
-  btnUp.on('click', function(e){
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, 500);
-  });
-  btnDown.on('click', function(e){
-    e.preventDefault();
-    $('html, body').animate({scrollTop: $('body').height()}, 800);
-  });
+  // btnUp.on('click', function(e){
+  //   e.preventDefault();
+  //   $('html, body').animate({scrollTop:0}, 500);
+  // });
+  // btnDown.on('click', function(e){
+  //   e.preventDefault();
+  //   $('html, body').animate({scrollTop: $('body').height()}, 800);
+  // });
 
   var swiper1 = new Swiper ('.swiper-container.swiper-one', {
     spaceBetween: 5,
@@ -166,6 +166,10 @@ $(document).ready(function () {
 
   galleryTop.controller.control = swiper2;
   swiper2.controller.control = galleryTop;
+
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    header: '.header'
+  });
 
   new WOW().init();
 
