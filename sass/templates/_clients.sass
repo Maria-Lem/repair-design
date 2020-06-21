@@ -1,2 +1,75 @@
 .clients
   padding-bottom: 30rem
+  margin-top: -2.6rem
+  &__text
+    max-width: 24rem
+  &__image
+    &-wrap
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      margin-right: 1.64rem
+      width: 76px
+      height: 76px
+      overflow: hidden
+      border-radius: 50%
+.heading
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: flex-start
+.card
+  &--clients
+  &__text
+    &--clients
+      max-width: 26.85rem
+      padding: 1.8rem 1.7rem 4rem 1.9rem
+      margin: 0
+      margin-top: 0
+  &__image
+    &--clients
+      max-width: none
+      object-fit: cover
+  &__title
+    &--clients
+      margin-bottom: 0
+      max-width: 13.86rem
+      font-weight: normal
+      font-size: 1.285rem
+      line-height: 1.64rem
+  &__price-tag
+    &--clients
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+      padding: 0
+      width: 293px
+      height: 54px
+      bottom: -1.8rem
+      font-weight: normal
+.review
+  max-width: 23.14rem
+  margin-top: 1rem
+  color: $secondary
+  font-size: 1.07rem
+  line-height: 1.93rem
+.price-tag
+  &__text
+    &--border
+      &::after
+        content: ''
+        width: 1px
+        height: 40px
+        background-color: $light
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    &--measure
+      width: 135px
+      height: 54px
+      border-right: .75px solid $light
+    &--notes
+      width: 158px
+      height: 54px
+      text-transform: none
