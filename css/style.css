@@ -665,7 +665,7 @@ img {
   justify-content: center;
   align-items: flex-start;
   padding-top: 100px;
-  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  background: #131313 url("../img/hero-bg.webp") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
   .hero::before {
@@ -821,7 +821,7 @@ img {
   margin-bottom: 4.428rem;
   max-width: 58.357rem;
   min-height: 31rem;
-  background: #131313 url("../img/video-bg.jpg") center no-repeat;
+  background: #131313 url("../img/video-bg.webp") center no-repeat;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
   .control__video::before {
     content: '';
@@ -879,7 +879,8 @@ img {
 
 .video__play {
   position: relative;
-  margin: auto; }
+  margin: auto;
+  cursor: pointer; }
 
 .types__section-title {
   margin-top: 2rem;
@@ -940,74 +941,10 @@ img {
   width: 100%;
   height: 100%; }
 
-.steps {
-  padding-bottom: 35rem; }
-  .steps__col-50 {
-    margin-top: 100px;
-    width: 62%; }
-
-.swiper-container--steps {
-  min-height: auto; }
-
-.swiper-two {
-  position: relative; }
-
-.swiper-wrapper--flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-
-.swiper-slide__text--steps {
-  flex-basis: 100%; }
-
-.swiper-slide__heading--steps {
-  max-width: 17.7rem;
-  font-weight: normal;
-  font-size: 1.07rem; }
-
-.swiper-slide__value--steps {
-  max-width: 24rem;
-  line-height: 2.1rem; }
-
-.swiper-slide--steps {
-  flex-direction: column;
-  flex-basis: 24%;
-  margin-bottom: 2.57rem;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.3); }
-
-.swiper-slide-thumb-active {
-  color: #ffffff; }
-  .swiper-slide-thumb-active .swiper-slide__number::after {
-    background-color: #E3B873; }
-
-.swiper-slide__number {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0;
-  margin-bottom: 1.21rem;
-  font-family: 'Yeseva One', cursive;
-  font-weight: normal; }
-  .swiper-slide__number::after {
-    content: '';
-    width: 20px;
-    height: 1px;
-    background-color: rgba(227, 184, 115, 0.3); }
-
-.swiper-pagination-fraction {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  color: #ffffff; }
-
-.team__section-title {
-  margin-top: -34.5rem;
-  color: #ffffff; }
-
 .team__text {
   max-width: 32rem;
   margin-bottom: 5.7rem;
-  color: #ffffff; }
+  color: #363636; }
 
 .image-wrap {
   display: flex;
@@ -1309,6 +1246,59 @@ img {
     align-self: flex-end;
     padding: 17px 48px; }
 
+.thanks {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6); }
+  .thanks--visible {
+    opacity: 1;
+    visibility: visible; }
+  .thanks__dialog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.357rem 3.5rem 1.928rem;
+    max-width: 36.14rem;
+    min-height: 16rem;
+    text-align: center;
+    color: #ffffff;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center; }
+  .thanks__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 12px;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    cursor: pointer; }
+  .thanks__title {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.357rem;
+    line-height: 1.857rem; }
+  .thanks__text {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-size: 1.2rem; }
+  .thanks__button {
+    padding: 17px 48px; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -1426,7 +1416,8 @@ img {
   .section-title__heading--light, .section-title__text--light {
     color: #ffffff; }
   .team__section-title {
-    margin-top: -10.1rem; }
+    margin-top: -10.1rem;
+    color: #ffffff; }
   .representation {
     color: #ffffff; }
   .scroll {
@@ -1826,4 +1817,6 @@ img {
   .control__button:active {
     padding: 0.79rem 4.35rem; }
   .footer__button:active {
-    padding: 1.13rem 4.3rem; } }
+    padding: 1.13rem 4.3rem; }
+  .thanks__button:active {
+    padding: 16px 47px; } }
